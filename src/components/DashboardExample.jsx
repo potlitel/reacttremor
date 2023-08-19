@@ -11,6 +11,9 @@ import {
   TabPanel,
   TabPanels,
 } from "@tremor/react";
+import KpiCardGrid from "./KpiCardGrid";
+import ChartView from "./ChartView";
+import SalesPeopleTable from "./SalesPeopleTable";
 
 export default function DashboardExample() {
   return (
@@ -25,31 +28,20 @@ export default function DashboardExample() {
         </TabList>
         <TabPanels>
           <TabPanel>
-            <Grid numItemsMd={2} numItemsLg={3} className="gap-6 mt-6">
-              <Card>
-                {/* Placeholder to set height */}
-                <div className="h-28" />
-              </Card>
-              <Card>
-                {/* Placeholder to set height */}
-                <div className="h-28" />
-              </Card>
-              <Card>
-                {/* Placeholder to set height */}
-                <div className="h-28" />
-              </Card>
-            </Grid>
+            <KpiCardGrid />
             <div className="mt-6">
-              <Card>
+              {/* <Card>
                 <div className="h-80" />
-              </Card>
+              </Card> */}
+              <ChartView />
             </div>
           </TabPanel>
           <TabPanel>
             <div className="mt-6">
-              <Card>
+              {/* <Card>
                 <div className="h-96" />
-              </Card>
+              </Card> */}
+              {/* <SalesPeopleTable /> */}
             </div>
           </TabPanel>
         </TabPanels>
