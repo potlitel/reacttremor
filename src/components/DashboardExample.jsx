@@ -41,7 +41,7 @@ export default function DashboardExample() {
               {/* <Card>
                 <div className="h-96" />
               </Card> */}
-              {/* <SalesPeopleTable /> */}
+              <SalesPeopleTable />
             </div>
           </TabPanel>
         </TabPanels>

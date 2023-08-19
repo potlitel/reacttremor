@@ -85,7 +85,7 @@ const deltaTypes = {
 
 export default function SalesPeopleTable() {
   const [selectedStatus, setSelectedStatus] = useState("all");
-  const [selectedNames, setSelectedNames] = useState < "" > [];
+  const [selectedNames, setSelectedNames] = useState([]);
 
   const isSalesPersonSelected = (salesPerson) =>
     (salesPerson.status === selectedStatus || selectedStatus === "all") &&
